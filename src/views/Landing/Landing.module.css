@@ -1,0 +1,381 @@
+@media screen and (max-width: 767px) {
+  .mainLanding {
+    max-width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerImageBanner {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .imageBanner {
+    width: 100%;
+
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+  .containerPrincipalTitle {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    text-align: center;
+    line-height: 1;
+    color: #002664;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .principalTitle {
+    font-size: 7vw;
+  }
+  .principalSubtitle {
+    font-size: 1.8vw;
+  }
+  .containerSocialMedia {
+    position: absolute;
+    bottom: 8%;
+    left: 6%;
+    display: flex;
+    gap: 28px;
+    color: #fff;
+    font-size: 2.5vw;
+  }
+  .socialMediaL,
+  .socialMediaR {
+    display: flex;
+    flex-direction: column;
+  }
+  .socialMediaLTwo,
+  .socialMediaRTwo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .phraseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+    margin: 25px 0;
+  }
+
+  .titlePhrase {
+    font-size: 4vw;
+    padding: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(40) forwards;
+    color: #002664;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .blogContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 25px 0;
+  }
+  .titleBlog {
+    display: none;
+  }
+  .contentBlog {
+    /* font-size: 2.8vw;
+      padding: 10px 15%;
+      order: 3;
+      color: #002664; */
+    display: none;
+  }
+  .imageBlog {
+    max-width: 80%;
+    max-height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    order: 2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .titleOurServices {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #002664;
+    padding: 25px 0;
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .mainLanding {
+    max-width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerImageBanner {
+    position: relative;
+    z-index: -1;
+  }
+  .imageBanner {
+    width: 100%;
+
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+  .containerPrincipalTitle {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    text-align: center;
+    line-height: 1;
+    color: #002664;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .principalTitle {
+    font-size: 7vw;
+  }
+  .principalSubtitle {
+    font-size: 1.8vw;
+  }
+  .containerSocialMedia {
+    position: absolute;
+    bottom: 8%;
+    left: 7%;
+    display: flex;
+    gap: 70px;
+    color: #fff;
+    font-size: 2.5vw;
+  }
+  .socialMediaL,
+  .socialMediaR {
+    display: flex;
+    flex-direction: column;
+  }
+  .socialMediaLTwo,
+  .socialMediaRTwo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .phraseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+    margin: 40px 0;
+  }
+
+  .titlePhrase {
+    font-size: 4vw;
+    padding: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(40) forwards;
+    color: #002664;
+  }
+
+  .buttonContactUs {
+    display: none;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .blogContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+  .titleBlog {
+    display: none;
+  }
+  .contentBlog {
+    /* font-size: 3.1vw;
+      padding: 10px 15%;
+      order: 3;
+      color: #002664;
+      margin-top: 5px; */
+    display: none;
+  }
+  .imageBlog {
+    max-width: 80%;
+    max-height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    order: 2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .titleOurServices {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #002664;
+    padding: 25px 0;
+    font-size: 4.5vw;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .mainLanding {
+    max-width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerImageBanner {
+    position: relative;
+  }
+  .imageBanner {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+  .containerPrincipalTitle {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    text-align: center;
+    line-height: 1;
+    color: #002664;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .principalTitle {
+    font-size: 7vw;
+  }
+  .principalSubtitle {
+    font-size: 1.8vw;
+  }
+  .containerSocialMedia {
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+    display: flex;
+    gap: 80px;
+    color: #fff;
+    font-size: 2.5vw;
+  }
+  .socialMediaL,
+  .socialMediaR {
+    display: flex;
+    flex-direction: column;
+  }
+  .socialMediaLTwo,
+  .socialMediaRTwo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .phraseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+    margin: 100px 0;
+  }
+  .titlePhrase {
+    font-size: 4vw;
+    padding: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(40) forwards;
+    color: #002664;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .blogContainer {
+    display: flex;
+    align-items: center;
+    margin: 0 50px 100px 50px;
+  }
+  .containerTextBlog {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 50px;
+    color: #002664;
+    gap: 12px;
+  }
+  .titleBlog {
+    font-size: 3.5vw;
+  }
+  .contentBlog {
+    font-size: 2.1vw;
+  }
+  .imageBlog {
+    max-width: 50%;
+    max-height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    order: 2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .titleOurServices {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #002664;
+    padding: 50px 0;
+    font-size: 3vw;
+  }
+}

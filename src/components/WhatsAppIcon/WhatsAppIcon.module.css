@@ -1,0 +1,30 @@
+.WhatsAppIcon {
+  cursor: pointer;
+  color: #25d366;
+  position: fixed;
+  width: 5%;
+  bottom: 2%;
+  right: 1%;
+  padding: 1%;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.WhatsAppIcon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .WhatsAppIcon {
+    width: 15%;
+    right: 2%;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .WhatsAppIcon {
+    width: 12%;
+    right: 2%;
+  }
+}

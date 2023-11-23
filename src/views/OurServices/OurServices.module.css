@@ -1,0 +1,105 @@
+@media screen and (max-width: 767px) {
+  .containerDescription {
+    margin-top: 70px;
+  }
+  .servicesComponent {
+    padding: 60px 0;
+    background-color: #002664;
+  }
+  .containerDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    font-size: 3.5vw;
+    padding: 40px 10%;
+    color: #002664;
+  }
+  .titleOurServices {
+    font-size: 5.5vw;
+  }
+  .buttonContactUsServices {
+    cursor: pointer;
+    margin-top: 6px;
+    border: none;
+    background-color: #002664;
+    color: #fff;
+    padding: 3% 4%;
+    border-radius: 0.5vw;
+    font-size: 2.3vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .containerDescription {
+    margin-top: 100px;
+  }
+  .servicesComponent {
+    padding: 60px 0;
+    background-color: #002664;
+  }
+  .containerDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    font-size: 3vw;
+    padding: 50px 10%;
+    color: #002664;
+  }
+  .titleOurServices {
+    font-size: 5vw;
+  }
+  .buttonContactUsServices {
+    cursor: pointer;
+    margin-top: 6px;
+    border: none;
+    background-color: #002664;
+    color: #fff;
+    padding: 2.5% 4%;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .containerDescription {
+    margin-top: 120px;
+  }
+  .servicesComponent {
+    padding: 60px 0;
+    background-color: #002664;
+  }
+  .containerDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    font-size: 2vw;
+    padding: 60px 10%;
+    color: #002664;
+  }
+  .titleOurServices {
+    font-size: 3.5vw;
+  }
+  .buttonContactUsServices {
+    cursor: pointer;
+    margin-top: 6px;
+    border: none;
+    background-color: #002664;
+    color: #fff;
+    padding: 2% 3%;
+    border-radius: 0.5vw;
+    font-size: 1.3vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .buttonContactUsServices:hover {
+    background-color: #00a9e0;
+  }
+}

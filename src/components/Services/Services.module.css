@@ -1,0 +1,222 @@
+@media screen and (max-width: 767px) {
+  .mainServices {
+    width: 100%;
+    background-color: #002664;
+    padding: 0 10%;
+  }
+  .servicesContainer {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    gap: 30px;
+    width: 100%;
+  }
+  .servicesContainer a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* .servicesContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      cursor: pointer;
+    } */
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    color: #002664;
+    font-size: 5vw;
+    background-color: #fff;
+    padding: 6% 4%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    gap: 0.5em;
+  }
+
+  .textContainerServices {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+  }
+  .imgService {
+    max-width: 100%;
+    border-radius: 5px;
+    /* transition: filter 0.3s ease; */
+  }
+  .descriptionService {
+    font-size: 3.5vw;
+  }
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .contactButtonService {
+    cursor: pointer;
+    background-color: #002664;
+    color: #fff;
+    border: none;
+    padding: 3.5% 6%;
+    border-radius: 1vw;
+    font-size: 3vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .mainServices {
+    width: 100%;
+    background-color: #002664;
+    padding: 0 10%;
+  }
+  .servicesContainer {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    gap: 40px;
+    width: 100%;
+  }
+  .servicesContainer a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #002664;
+    font-size: 3vw;
+    background-color: #fff;
+    padding: 6% 4%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    gap: 0.5em;
+  }
+  .textContainerServices {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+  }
+  .imgService {
+    max-width: 100%;
+    border-radius: 5px;
+    /* transition: filter 0.3s ease; */
+  }
+  .descriptionService {
+    font-size: 2.2vw;
+  }
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .contactButtonService {
+    cursor: pointer;
+    background-color: #002664;
+    color: #fff;
+    border: none;
+    padding: 3% 6%;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .mainServices {
+    width: 100%;
+    background-color: #002664;
+    padding: 0 10%;
+  }
+  .servicesContainer {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 40px;
+    width: 100%;
+  }
+  .servicesContainer a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .imgContainer {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #002664;
+    font-size: 2vw;
+    background-color: #fff;
+    padding: 6% 4%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    gap: 0.4em;
+    transition: transform 0.2s ease-in-out;
+  }
+  .imgContainer:hover {
+    transform: scale(1.018);
+  }
+  .textContainerServices {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+  }
+  .imgService {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .imgService:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+  .descriptionService {
+    font-size: 1.3vw;
+  }
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .contactButtonService {
+    cursor: pointer;
+    background-color: #002664;
+    color: #fff;
+    border: none;
+    padding: 3.5% 6%;
+    border-radius: 0.5vw;
+    font-size: 1.1vw;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.3s;
+  }
+  .nameService {
+    transition: 0.3s;
+  }
+  .nameService:hover {
+    color: #00a9e0;
+    transition: 0.3s;
+  }
+  .contactButtonService:hover {
+    background-color: #00a9e0;
+    transition: 0.3s;
+    transform: scale(1.02);
+  }
+}

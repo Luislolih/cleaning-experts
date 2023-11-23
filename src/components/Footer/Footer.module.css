@@ -1,0 +1,144 @@
+@media screen and (max-width: 767px) {
+  .mainFooter {
+    background-color: #002664;
+    color: #fff;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .mainFooter a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .sectionOneFContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 3.1vw;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .titleSOF,
+  .titleSTF {
+    font-size: 3.4vw;
+  }
+  .containerContactUs {
+    order: 1;
+  }
+  .sectionTwoFContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3.1vw;
+    gap: 5px;
+  }
+  .titleSOF {
+    margin-bottom: 5px;
+  }
+  .brandRegisterFooter {
+    text-align: center;
+    font-size: 2.8vw;
+    margin-top: 30px;
+    color: #cfcece;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .mainFooter {
+    background-color: #002664;
+    color: #fff;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .mainFooter a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .sectionOneFContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5vw;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+  .titleSOF,
+  .titleSTF {
+    font-size: 2.8vw;
+  }
+  .containerContactUs {
+    order: 1;
+  }
+  .sectionTwoFContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5vw;
+    gap: 5px;
+  }
+  .titleSOF {
+    margin-bottom: 5px;
+  }
+  .brandRegisterFooter {
+    text-align: center;
+    font-size: 2.2vw;
+    margin-top: 50px;
+    color: #cfcece;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .mainFooter {
+    background-color: #002664;
+    color: #fff;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .mainFooter a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .sectionOneFContainer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.5vw;
+    gap: 25px;
+    margin-bottom: 80px;
+  }
+  /* .containerServicesF,
+    .containerContactUs,
+    .containerAboutTermsF { 
+    } */
+  .titleSOF,
+  .titleSTF {
+    font-size: 2vw;
+  }
+
+  .sectionTwoFContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5vw;
+    gap: 5px;
+    padding: 0 150px;
+  }
+  .titleSOF {
+    margin-bottom: 5px;
+  }
+  .brandRegisterFooter {
+    text-align: center;
+    font-size: 1.4vw;
+    margin-top: 55px;
+    color: #cfcece;
+  }
+}
