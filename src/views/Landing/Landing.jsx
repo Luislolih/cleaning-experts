@@ -95,7 +95,7 @@ const Landing = () => {
                     <div className={styles.containerImgPeople}>
                         <img className={styles.imgPeople} src={paolo}></img>
                         <p className={styles.namePeople}>
-                            Paolo Loli{" "}
+                            Paolo Loli Torres{" "}
                             <sub className={styles.subText}>/ Founder</sub>
                         </p>
                     </div>
