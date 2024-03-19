@@ -2,18 +2,41 @@ import { useForm, ValidationError } from "@formspree/react";
 import { useLanguage } from "../../context/LanguageContext";
 import styles from "./Form.module.css";
 import services from "../../data/services";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 const Form = () => {
     const { language } = useLanguage();
     const [state, handleSubmit] = useForm("xnqebzpq");
 
+    const [name, setName] = useState("");
+    const [number, setNumber] = useState("");
+    const [email, setEmail] = useState("");
+    const [service, setService] = useState("");
+    const [message, setMessage] = useState("");
+
+    const isFormInvalid =
+        name === "" ||
+        number === "" ||
+        email === "" ||
+        service === "" ||
+        message === "";
+
     const serviceOptions = services[language];
     if (state.succeeded) {
         return (
-            <p>
-                {language === "en"
-                    ? "Thank you for contacting us! We will contact you as soon as possible."
-                    : "¡Gracias por contactarnos! Te estaremos respondiendo a la brevedad."}
-            </p>
+            <div className={styles.successfulAlert}>
+                <p>
+                    {language === "en"
+                        ? "Thank you for contacting us! We will contact you as soon as possible."
+                        : "¡Gracias por contactarnos! Te estaremos respondiendo a la brevedad."}
+                </p>
+                <Link to="/">
+                    <button className={styles.buttonMenu}>
+                        {" "}
+                        {language === "en" ? "MAIN MENU" : "MENÚ PRINCIPAL"}
+                    </button>
+                </Link>
+            </div>
         );
     }
     return (
@@ -29,6 +52,8 @@ const Form = () => {
                 id="name"
                 type="text"
                 name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className={styles.inputForm}
             />
             <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -42,6 +67,8 @@ const Form = () => {
                 id="number"
                 type="number"
                 name="number"
+                value={number}
+                onChange={(e) => setNumber(e.target.value)}
                 className={styles.inputForm}
             />
             <ValidationError
@@ -57,6 +84,8 @@ const Form = () => {
                 id="email"
                 type="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className={styles.inputForm}
             />
             <ValidationError
@@ -70,7 +99,11 @@ const Form = () => {
                     ? "Service of your interest:"
                     : "Servicio de tu interés:"}
             </label>
-            <select className={styles.selectForm}>
+            <select
+                className={styles.selectForm}
+                value={service}
+                onChange={(e) => setService(e.target.value)}
+            >
                 <option value="" disabled selected>
                     {" "}
                     {language === "en"
@@ -87,7 +120,12 @@ const Form = () => {
                     ? "Leave us a Message:"
                     : "Déjanos un mensaje:"}
             </label>
-            <textarea id="message" name="message" />
+            <textarea
+                id="message"
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+            />
             <ValidationError
                 prefix="Message"
                 field="message"
@@ -95,10 +133,12 @@ const Form = () => {
             />
             <button
                 type="submit"
-                disabled={state.submitting}
-                className={styles.buttonForm}
+                disabled={isFormInvalid}
+                className={
+                    isFormInvalid ? styles.buttonFormInvalid : styles.buttonForm
+                }
             >
-                Submit
+                {language === "en" ? "SUBMIT" : "ENVIAR"}
             </button>
         </form>
     );

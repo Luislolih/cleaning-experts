@@ -38,7 +38,7 @@ textarea {
 }
 
 .buttonForm {
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: #002664;
     color: white;
     border: none;
@@ -51,15 +51,52 @@ textarea {
         rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transition: 0.3s;
 }
-
+.buttonFormInvalid {
+    padding: 15px 20px;
+    background-color: #5f80b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    width: 100%;
+}
 .buttonForm:hover {
     background-color: #00a9e0;
+}
+
+.successfulAlert {
+    color: #002664;
+    margin: 5rem 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.buttonMenu {
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    color: #fff;
+    background-color: #002664;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.3s;
+}
+.buttonMenu:hover {
+    background-color: #00a9e0;
+    transition: 0.3s;
+    transform: scale(1.02);
 }
 @media screen and (max-width: 767px) {
     .titleForm {
         font-size: 7vw;
     }
     .labelForm {
+        font-size: 3.5vw;
+    }
+    .successfulAlert {
         font-size: 3.5vw;
     }
 }
@@ -70,6 +107,9 @@ textarea {
     .labelForm {
         font-size: 2.5vw;
     }
+    .successfulAlert {
+        font-size: 3vw;
+    }
 }
 @media screen and (min-width: 1023px) {
     .titleForm {
@@ -77,5 +117,11 @@ textarea {
     }
     .labelForm {
         font-size: 2vw;
+    }
+    .buttonForm {
+        font-size: 1.3vw;
+    }
+    .successfulAlert {
+        font-size: 2.5vw;
     }
 }

@@ -6,7 +6,7 @@ import styles from "./ServiceCard.module.css";
 import WhatsAppIcon from "../WhatsAppIcon/WhatsAppIcon";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
-
+import { Link } from "react-router-dom";
 const ServiceCard = () => {
     const { slug } = useParams();
     const { language } = useLanguage();
@@ -52,9 +52,11 @@ const ServiceCard = () => {
             </div>
           </div> */}
                     {/*  */}
-                    <button className={styles.buttonRequest}>
-                        {language === "en" ? "REQUEST" : "SOLICITAR"}
-                    </button>
+                    <Link to="/contact">
+                        <button className={styles.buttonRequest}>
+                            {language === "en" ? "REQUEST" : "SOLICITAR"}
+                        </button>
+                    </Link>
                 </div>
             </div>
             <WhatsAppIcon />

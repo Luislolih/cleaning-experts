@@ -78,7 +78,7 @@ const Footer = () => {
                 </p>
             </div>
             <p className={styles.brandRegisterFooter}>
-                Cleaning Experts © 2023
+                Cleaning Experts © 2024
             </p>
         </main>
     );
