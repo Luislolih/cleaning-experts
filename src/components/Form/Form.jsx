@@ -100,8 +100,10 @@ const Form = () => {
                     : "Servicio de tu interés:"}
             </label>
             <select
+                id="service"
                 className={styles.selectForm}
                 value={service}
+                name="service"
                 onChange={(e) => setService(e.target.value)}
             >
                 <option value="" disabled selected>
