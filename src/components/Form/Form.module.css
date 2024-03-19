@@ -2,5 +2,80 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 3vw;
+    width: 80%;
+    margin: 0 10% 4rem 10%;
+    color: #002664;
+}
+
+.titleForm {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.labelForm {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.inputForm,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.selectForm {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.buttonForm {
+    padding: 10px 20px;
+    background-color: #002664;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.3s;
+}
+
+.buttonForm:hover {
+    background-color: #00a9e0;
+}
+@media screen and (max-width: 767px) {
+    .titleForm {
+        font-size: 7vw;
+    }
+    .labelForm {
+        font-size: 3.5vw;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .titleForm {
+        font-size: 4.5vw;
+    }
+    .labelForm {
+        font-size: 2.5vw;
+    }
+}
+@media screen and (min-width: 1023px) {
+    .titleForm {
+        font-size: 3.5vw;
+    }
+    .labelForm {
+        font-size: 2vw;
+    }
 }
