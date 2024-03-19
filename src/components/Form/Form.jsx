@@ -114,6 +114,11 @@ const Form = () => {
                     <option value={service.title}>{service.title}</option>
                 ))}
             </select>
+            <ValidationError
+                prefix="Service"
+                field="service"
+                errors={state.errors}
+            />
 
             <label htmlFor="email" className={styles.labelForm}>
                 {language === "en"
