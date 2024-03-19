@@ -1,3 +1,18 @@
 .space {
     margin-top: 180px;
 }
+@media screen and (max-width: 767px) {
+    .space {
+        margin-top: 120px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .space {
+        margin-top: 150px;
+    }
+}
+@media screen and (min-width: 1023px) {
+    .space {
+        margin-top: 180px;
+    }
+}
